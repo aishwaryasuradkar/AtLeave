@@ -1,10 +1,6 @@
 //react arroe function cmponent(rfca)
-import React from 'react'
+import React from "react";
 
-export const Footer = () => {
-  return (
-    <div>
-        Footer Works!!
-        </div>
-  )
+export default function Footer() {
+  return <div>Footer Works!!</div>;
 }
