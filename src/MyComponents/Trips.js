@@ -1,15 +1,21 @@
-//reacrt arrow function components(rafc)
-import React from 'react'
+import React from "react";
 
-export const Trips = (props) => {
+const Trip = (props) => {
+
+  // ? Mapping out the input [trips] *prop* values and converting each of them into a [HTML] div 
+  const items = props.trips.map((place) => (
+    <>
+      <h4>{place["sno"]}</h4>
+      <h4>{place["title"]}</h4>
+      <h6>{place["desc"]}</h6>
+    </>
+  ));
   return (
     <div className="container">
-        <h3>Trips</h3>
-        {props.trips}
-        
-
+      <h2>Trips</h2>
+      {items}
     </div>
-  )
-}
+  );
+};
 
-
+export default Trip;
