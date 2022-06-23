@@ -1,14 +1,12 @@
-//react arrow function components(rafc)
 import React from 'react'
 
-export const MoreInfo = ({Trips}) => {
+export const MoreInfo = ({trip}) => {
   return (
     <div> 
-      <h4>{Trips.title}</h4>
-      <p>{Trips.desc}</p>
+      <h4>{trip['title']}</h4>
+      <p>{trip['desc']}</p>
       <button className="btn btn-sm btn-danger">Select</button>
     </div>
-      
   )
 }
 
