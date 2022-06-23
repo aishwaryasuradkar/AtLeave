@@ -3,9 +3,9 @@
 import React from 'react';
 
 export default function Header(props) {
-    // props is JavaScript object we pass from parent component to child component
+    // props is a JavaScript object we use to pass from parent component to child component
     //i.e. if we make changes in app.js which the parent component we just have to 
-    //use props. and whatever extension we have saved it with i. It will change the name
+    //use props. and whatever extension we have saved it with it. It will change the name
     // same as we used in the parent component. now, the main benefit is that we don't have to update
     // it every time just use {props.} .
     
