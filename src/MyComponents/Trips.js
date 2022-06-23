@@ -14,9 +14,9 @@ const Trip = (props) => {
   ));
   return (
     <div className="container">
-      <h2 classNmae="text-center">Trips</h2>
+      <h2 className="text-center">Trips</h2>
       {items}
-      <MoreInfo trips={props.trips[0]}/>
+      <MoreInfo trip={props.trips[0]}/>
     </div>
   );
 };
